@@ -116,6 +116,7 @@ public class ExpenseReportfragment extends Fragment {
         public TextView vDate;
         public TextView vAmount;
         public TextView vNotes;
+
         View view;
         public ViewHolder(View itemView) {
             super(itemView);
