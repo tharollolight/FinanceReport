@@ -6,65 +6,92 @@
     android:layout_height="match_parent"
     tools:context="com.example.coelab.financereport.AddExpense">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/expense_source"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:hint="To"/>
-
-        <EditText
-            android:id="@+id/expense_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:hint="2017/02/28"/>
-
-        <EditText
-            android:id="@+id/expense_amount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:hint="Amount"/>
-
-        <EditText
-            android:id="@+id/expense_notes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:hint="Notes"/>
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:text="Cancel"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:text="Save"/>
+                <EditText
+                    android:id="@+id/expense_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:hint="To"/>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/expense_date_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="Select Date"/>
+
+                    <TextView
+                        android:id="@+id/expense_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:hint="2017/02/28"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/expense_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:hint="Amount"/>
+
+                <EditText
+                    android:id="@+id/expense_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:hint="Notes"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/save_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:text="Save"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/expense_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
 
         </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
 
 </FrameLayout>

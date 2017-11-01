@@ -23,17 +23,16 @@
         <activity android:name=".AddExpense">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.coelab.financereport.MainActivity"/>
+                android:value="com.example.coelab.financereport.MainActivity" />
         </activity>
-
         <activity android:name=".AddIncome">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.coelab.financereport.MainActivity"/>
+                android:value="com.example.coelab.financereport.MainActivity" />
         </activity>
-
+        <activity android:name=".IncomeReportFragment" />
+        <activity android:name=".ExpenseReportfragment" />
+        <activity android:name=".GeneralReportFragment"></activity>
     </application>
 
-</manifest>
-
-    <!--android:name="android.support.PARENT_Activity"  -->
+</manifest> <!-- android:name="android.support.PARENT_Activity" -->

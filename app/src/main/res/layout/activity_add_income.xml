@@ -6,53 +6,90 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.coelab.financereport.AddIncome">
-
-    <EditText
-        android:id="@+id/income_source"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:hint="From /Source"/>
-
-    <EditText
-        android:id="@+id/income_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:hint="2017/02/28"/>
-
-    <EditText
-        android:id="@+id/income_amount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:hint="Amount"/>
-
-    <EditText
-        android:id="@+id/income_notes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:hint="Notes"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:text="Save"/>
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/income_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="From /Source"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/income_date_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Select date"/>
+
+                <TextView
+                    android:id="@+id/income_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="2010/02/02"
+                    android:hint="2017/02/02"
+                    />
+
+            </LinearLayout>
 
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/income_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Amount" />
+
+            <EditText
+                android:id="@+id/income_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Notes"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/save_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Save"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/income_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="message"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
 
 
 </LinearLayout>
